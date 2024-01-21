@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  
+}
+
+.container {
+  width: calc(100% - 2rem);
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+.mainHead {
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.8875rem + 0.5000000000000004vw, 2.2rem);
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+
+.searchBox {
+    display: flex;
+    align-items: flex-end;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.searchBox>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+.lSearch {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.search {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    width: 60vw;
+}
+
+.search::placeholder {
+    opacity: .3;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.search:focus {
+    border: 1px solid rgba(40, 40, 40, .5);
+    outline: none;
+    caret-color: orangered;
+}
+
+.btn {
+    padding: 8px 16px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-inline: 16px;
+}
+
+.resBox {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res {
+    background: #256235;
+    color: #fff;
+    padding: 22px 18px;
+    width: 30%;
+    border-radius: 12px;
+    margin-right: 15px;
+    margin-top: 16px;
+}
+
+@media (max-width: 850px) {
+    .res {
+        width: 47%;
+    }
+}
+
+@media (max-width: 530px) {
+    .res {
+        width: 100%;
+    }
+}
+
+.uniName {
+    letter-spacing: 2;
+}
